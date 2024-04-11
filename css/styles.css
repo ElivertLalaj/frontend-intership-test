@@ -533,7 +533,6 @@
     border: none;
   }
 
-
   .price6 {
     position: absolute;
     top: 60%;
@@ -544,8 +543,7 @@
     border: none;
   }
 
-
-   .price11 {
+  .price11 {
     position: absolute;
     top: 60%;
     left: 50%;
@@ -554,7 +552,6 @@
     color: #0057f5;
     border: none;
   }
-
 }
 
 @media only screen and (width: 425px) {
@@ -591,17 +588,14 @@
   .price1 {
     left: 47%;
   }
- 
 
   .price6 {
     left: 47%;
   }
- 
 
   .price11 {
     left: 47%;
   }
- 
 }
 
 @media only screen and (width: 375px) {
@@ -638,17 +632,14 @@
   .price1 {
     left: 54%;
   }
-  
 
   .price6 {
     left: 54%;
   }
- 
 
   .price11 {
     left: 54%;
   }
-  
 }
 
 @media only screen and (min-width: 1024px) {
@@ -923,80 +914,76 @@
 }
 
 @media only screen and (width: 768px) {
-  
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-.image-container {
-  display: flex;
-  flex-wrap: wrap;
-}
+  .images {
+    display: grid;
+  }
 
-.images {
-  display: grid;
-}
+  .img3 {
+    width: 100%;
+    height: 100px;
+  }
+  .big-image,
+  .small-images {
+    width: 100%;
+  }
 
-.img3 {
-  width: 100%;
-  height: 100px;
-}
-.big-image,
-.small-images {
-  width: 100%;
-}
+  .img1,
+  .img2 {
+    width: 100%;
+  }
+  .carousel {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 20%;
+  }
 
-.img1,
-.img2 {
-  width: 100%;
-}
-.carousel {
-  width: 100%;
-  overflow: hidden;
-  margin: 0 auto;
-  position: relative;
-  margin-top: 20%;
-}
+  .carousel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    transition: transform 0.5s ease;
+    justify-content: center;
+    width: 100px;
+  }
 
-.carousel ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  transition: transform 0.5s ease;
-  justify-content: center;
-  width: 100px;
-}
+  .carousel li {
+    width: calc(100% - 26px);
+    margin-left: 36px;
+    display: flex;
+    align-items: center;
+    border: 2px solid transparent;
+    transition: border-color 0.5s ease;
+  }
 
-.carousel li {
-  width: calc(100% - 26px);
-  margin-left: 36px;
-  display: flex;
-  align-items: center;
-  border: 2px solid transparent;
-  transition: border-color 0.5s ease;
-}
+  .carousel li:last-child {
+    margin-right: 0;
+  }
 
-.carousel li:last-child {
-  margin-right: 0;
-}
+  .carousel img {
+    width: 150px;
+    margin-inline: 48px;
+  }
 
-.carousel img {
-  width: 150px;
-  margin-inline: 48px;
-}
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    z-index: 100;
+  }
 
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 10px;
-  z-index: 100;
-}
-
-
-  
   .next {
     right: 5px;
     border-radius: 100px;
@@ -1143,10 +1130,6 @@
     border: none;
   }
 
- 
-
-  
-
   .price6 {
     position: absolute;
     top: 56%;
@@ -1176,8 +1159,6 @@
     color: #0057f5;
     border: none;
   }
-
- 
 
   .price11 {
     position: absolute;
@@ -1211,3 +1192,949 @@
 }
 
 
+@media only screen and (min-width: 1333px) {
+  .carousel li {
+    width: calc(100% / 7);
+  }
+  .next {
+    right: 5px;
+    border-radius: 100px;
+    width: 8px;
+    height: 20px;
+    padding: 8px;
+  }
+
+  .prev {
+    left: 5px;
+    border-radius: 100px;
+    width: 8px;
+    height: 20px;
+    padding: 8px;
+  }
+  .button1 {
+    position: absolute;
+    top: 34%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #fff;
+    color: #d70233;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .button2 {
+    position: absolute;
+    top: 85%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #0057f5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .button {
+    position: absolute;
+    top: 85%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #fff;
+    color: #3b0278;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .button3 {
+    position: absolute;
+    top: 80%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #0057f5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .button4 {
+    position: absolute;
+    top: 80%;
+    left: 36%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #0057f5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .button5 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #0057f5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .button6 {
+    position: absolute;
+    top: 80%;
+    left: 64%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #0057f5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .button7 {
+    position: absolute;
+    top: 80%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #0057f5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .price1 {
+    position: absolute;
+    top: 70%;
+    left: 19%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price2 {
+    position: absolute;
+    top: 70%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price3 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price4 {
+    position: absolute;
+    top: 70%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price5 {
+    position: absolute;
+    top: 70%;
+    left: 81%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price6 {
+    position: absolute;
+    top: 70%;
+    left: 19%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price7 {
+    position: absolute;
+    top: 70%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price8 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price9 {
+    position: absolute;
+    top: 70%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price10 {
+    position: absolute;
+    top: 70%;
+    left: 81%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price11 {
+    position: absolute;
+    top: 70%;
+    left: 19%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price12 {
+    position: absolute;
+    top: 70%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price13 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price14 {
+    position: absolute;
+    top: 70%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price15 {
+    position: absolute;
+    top: 70%;
+    left: 81%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .img2 {
+    margin-left: 10px;
+    margin-bottom: 5px;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .small-images {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button1 {
+    position: absolute;
+    top: 34%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #fff;
+    color: #d70233;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .button2 {
+    position: absolute;
+    top: 85%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #0057f5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .button {
+    position: absolute;
+    top: 85%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #fff;
+    color: #3b0278;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .button3 {
+    position: absolute;
+    top: 46%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #0057f5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .button4 {
+    position: absolute;
+    top: 46%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #0057f5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .button5 {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #0057f5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .button6 {
+    position: absolute;
+    top: 46%;
+    left: 63%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #0057f5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .button7 {
+    position: absolute;
+    top: 46%;
+    left: 76%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #0057f5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .images {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .carousel {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 20%;
+  }
+
+  .carousel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    transition: transform 0.5s ease;
+    justify-content: center;
+  }
+
+  .carousel li {
+    width: calc(100% / 5);
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+    transition: border-color 0.5s ease;
+  }
+
+  .carousel img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-inline: 15px;
+  }
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    z-index: 100;
+  }
+
+  .prev {
+    left: 150px;
+    border-radius: 100px;
+    width: 8px;
+    height: 20px;
+    padding: 8px;
+  }
+
+  .next {
+    right: 150px;
+    border-radius: 100px;
+    width: 8px;
+    height: 20px;
+    padding: 8px;
+  }
+
+  .price1 {
+    position: absolute;
+    top: 70%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price2 {
+    position: absolute;
+    top: 70%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price3 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price4 {
+    position: absolute;
+    top: 70%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price5 {
+    position: absolute;
+    top: 70%;
+    left: 79%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price6 {
+    position: absolute;
+    top: 70%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price7 {
+    position: absolute;
+    top: 70%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price8 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price9 {
+    position: absolute;
+    top: 70%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price10 {
+    position: absolute;
+    top: 70%;
+    left: 79%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price11 {
+    position: absolute;
+    top: 70%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price12 {
+    position: absolute;
+    top: 70%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price13 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price14 {
+    position: absolute;
+    top: 70%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price15 {
+    position: absolute;
+    top: 70%;
+    left: 79%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+}
+
+
+
+@media only screen and (min-width: 2560px) {
+  .img2 {
+    margin-left: 10px;
+    margin-bottom: 5px;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .small-images {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button1 {
+    position: absolute;
+    top: 34%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #fff;
+    color: #d70233;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .button2 {
+    position: absolute;
+    top: 85%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #0057f5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .button {
+    position: absolute;
+    top: 85%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #fff;
+    color: #3b0278;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .button3 {
+    position: absolute;
+    top: 28%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #0057f5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .button4 {
+    position: absolute;
+    top: 28%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #0057f5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .button5 {
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #0057f5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .button6 {
+    position: absolute;
+    top: 28%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #0057f5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .button7 {
+    position: absolute;
+    top: 28%;
+    left: 64%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #0057f5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .images {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .carousel {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 20%;
+  }
+
+  .carousel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    transition: transform 0.5s ease;
+    justify-content: center;
+  }
+
+  .carousel li {
+    width: calc(100% / 5);
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+    transition: border-color 0.5s ease;
+  }
+
+  .carousel img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-inline: 15px;
+  }
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    z-index: 100;
+  }
+
+  .prev {
+    left: 588px;
+    border-radius: 100px;
+    width: 8px;
+    height: 20px;
+    padding: 8px;
+  }
+
+  .next {
+    right: 588px;
+    border-radius: 100px;
+    width: 8px;
+    height: 20px;
+    padding: 8px;
+  }
+
+  .price1 {
+    position: absolute;
+    top: 70%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price2 {
+    position: absolute;
+    top: 70%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price3 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price4 {
+    position: absolute;
+    top: 70%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price5 {
+    position: absolute;
+    top: 70%;
+    left: 66%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price6 {
+    position: absolute;
+    top: 70%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price7 {
+    position: absolute;
+    top: 70%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price8 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price9 {
+    position: absolute;
+    top: 70%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price10 {
+    position: absolute;
+    top: 70%;
+    left: 66%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price11 {
+    position: absolute;
+    top: 70%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price12 {
+    position: absolute;
+    top: 70%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price13 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price14 {
+    position: absolute;
+    top: 70%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+
+  .price15 {
+    position: absolute;
+    top: 70%;
+    left: 66%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #0057f5;
+    border: none;
+  }
+}
